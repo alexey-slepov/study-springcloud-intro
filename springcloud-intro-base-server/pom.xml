@@ -3,13 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>epam.slepov.study</groupId>
-    <artifactId>springcloud.intro</artifactId>
+    <artifactId>springcloud.intro.base.server</artifactId>
     <version>1.0</version>
 
     <packaging>jar</packaging>
 
-    <name>springcloud.intro</name>
-    <url>http://maven.apache.org</url>
+    <name>springcloud-intro-base-server</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
