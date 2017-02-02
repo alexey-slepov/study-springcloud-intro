@@ -1,0 +1,27 @@
+---
+spring:
+  profiles:
+    active: subject
+  application:
+    name: study-springcloud-words-server
+  cloud:
+    config:
+      failFast: true
+      uri: http://localhost:5500
+
+# Allow Eureka to recognize two apps of the same type on the same host as separate instances:
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+---
+spring:
+  profiles: subject
+  application:
+    name: study-springcloud-words-server-subject
+
+---
+spring:
+  profiles: adjective
+  application:
+    name: study-springcloud-words-server-adjective
