@@ -1,0 +1,9 @@
+---
+spring:
+  application:
+    name: springcloud-bus-luckyword-client
+  cloud:
+    config:
+      uri: http://localhost:5500
+server:
+  port: 5550
